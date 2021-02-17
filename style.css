@@ -197,4 +197,62 @@
 }
 /* /esercizio 12 */
 /* esercizio 13 */
+.ex-13-button:hover .ex-13-top-white{
+  animation-name: around_top;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+@keyframes around_top {
+  0%{
+    left:10%;
+  }
+  25%{
+    left: calc(100% - 40px);
+    top: -10px;
+  }
+  40%{
+    left: calc(100% - 40px);
+    top: calc(100% - 10px);
+  }
+  65%{
+    left: -10px;
+    top: calc(100% - 10px);
+  }
+  80%{
+    left: -10px;
+    top: -10px;
+  }
+  100%{
+    left: 10%;
+  }
+}
+.ex-13-button:hover .ex-13-bottom-white{
+  animation-name: around_bottom;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+@keyframes around_bottom {
+  0%{
+    right:20%;
+  }
+  25%{
+    right: calc(100% - 40px);
+    bottom: -10px;
+  }
+  40%{
+    right: calc(100% - 40px);
+    bottom: calc(100% - 10px);
+  }
+  65%{
+    right: -10px;
+    bottom: calc(100% - 10px);
+  }
+  80%{
+    right: -10px;
+    bottom: -10px;
+  }
+  100%{
+    right: 20%;
+  }
+}
 /* /esercizio 13 */
